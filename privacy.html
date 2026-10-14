@@ -4,16 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DishPop – Gizlilik Politikası / Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <header><div class="logo"></div><h1>DishPop</h1></header>
+  <header><img class="logo" src="img/logo.png" alt="DishPop"><p class="tag">Bulaşık bulmacası · Dish sorting puzzle</p></header>
   <nav>
     <a href="index.html">Destek / Support</a>
     <a href="privacy.html" class="active">Gizlilik / Privacy</a>
-    <a href="#tr" onclick="show('tr');return false;">Türkçe</a>
-    <a href="#en" onclick="show('en');return false;">English</a>
+    <a href="#tr" class="lang-btn" onclick="show('tr');return false;">Türkçe</a>
+    <a href="#en" class="lang-btn" onclick="show('en');return false;">English</a>
   </nav>
 
   <!-- ===================== TÜRKÇE ===================== -->
@@ -128,7 +132,7 @@
     </div>
   </section>
 
-  <footer>© 2026 Çağrı Kumaş · DishPop</footer>
+  <footer><img src="img/icon.png" alt="">© 2026 Çağrı Kumaş · DishPop</footer>
 </main>
 <script>
 function show(l){document.querySelectorAll('.lang').forEach(s=>s.classList.toggle('show',s.id===l));}

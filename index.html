@@ -4,26 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DishPop – Destek / Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <header><div class="logo"></div><h1>DishPop</h1></header>
+  <header><img class="logo" src="img/logo.png" alt="DishPop"><p class="tag">Bulaşık bulmacası · Dish sorting puzzle</p></header>
   <nav>
     <a href="index.html" class="active">Destek / Support</a>
     <a href="privacy.html">Gizlilik / Privacy</a>
-    <a href="#tr" onclick="show('tr');return false;">Türkçe</a>
-    <a href="#en" onclick="show('en');return false;">English</a>
+    <a href="#tr" class="lang-btn" onclick="show('tr');return false;">Türkçe</a>
+    <a href="#en" class="lang-btn" onclick="show('en');return false;">English</a>
   </nav>
 
   <section id="tr" class="lang show">
     <div class="card">
-      <h2>Destek</h2>
+      <div class="hero"><img src="img/hero.png" alt=""><div><h2>Destek</h2>
       <p>DishPop, bulaşıkları doğru kasalara dizip makineye gönderdiğin tek mekanikli bir mantık bulmacasıdır. Sorun, öneri ve geri bildirimlerin için bize yaz:</p>
       <p><strong>E-posta:</strong> <a href="mailto:gulistankumas@gmail.com?subject=DishPop%20Destek">gulistankumas@gmail.com</a></p>
-      <p class="muted">Genelde 2 iş günü içinde yanıt veriyoruz. Yazarken cihaz modelini, iOS sürümünü ve mümkünse ekran görüntüsünü eklersen daha hızlı çözeriz.</p>
+      <p class="muted">Genelde 2 iş günü içinde yanıt veriyoruz. Yazarken cihaz modelini, iOS sürümünü ve mümkünse ekran görüntüsünü eklersen daha hızlı çözeriz.</p></div></div>
     </div>
 
+    <div class="card"><div class="pieces"><img src="img/kol_s1_01.png" alt=""><img src="img/kol_s2_01.png" alt=""><img src="img/kol_s3_01.png" alt=""></div><p class="muted" style="text-align:center;margin:8px 0 0">Porselen Bahçesi · Amalfi Limonu · Cottagecore</p></div>
     <div class="card">
       <h2>Sık sorulan sorular</h2>
       <h3>Oyun internetsiz açılmıyor</h3>
@@ -43,12 +48,13 @@
 
   <section id="en" class="lang">
     <div class="card">
-      <h2>Support</h2>
+      <div class="hero"><img src="img/hero.png" alt=""><div><h2>Support</h2>
       <p>DishPop is a single-mechanic logic puzzle: sort the dishes into the right racks and send them to the dishwasher. For bugs, suggestions and feedback, write to us:</p>
       <p><strong>E-mail:</strong> <a href="mailto:gulistankumas@gmail.com?subject=DishPop%20Support">gulistankumas@gmail.com</a></p>
-      <p class="muted">We usually reply within 2 business days. Including your device model, iOS version and a screenshot helps us fix things faster.</p>
+      <p class="muted">We usually reply within 2 business days. Including your device model, iOS version and a screenshot helps us fix things faster.</p></div></div>
     </div>
 
+    <div class="card"><div class="pieces"><img src="img/kol_s1_01.png" alt=""><img src="img/kol_s2_01.png" alt=""><img src="img/kol_s3_01.png" alt=""></div><p class="muted" style="text-align:center;margin:8px 0 0">Porcelain Garden · Amalfi Lemon · Cottagecore</p></div>
     <div class="card">
       <h2>Frequently asked questions</h2>
       <h3>The game won't open without internet</h3>
@@ -66,7 +72,7 @@
     </div>
   </section>
 
-  <footer>© 2026 Çağrı Kumaş · DishPop</footer>
+  <footer><img src="img/icon.png" alt="">© 2026 Çağrı Kumaş · DishPop</footer>
 </main>
 <script>
 function show(l){document.querySelectorAll('.lang').forEach(s=>s.classList.toggle('show',s.id===l));}
