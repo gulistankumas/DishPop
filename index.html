@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DishPop – Destek / Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><div class="logo"></div><h1>DishPop</h1></header>
+  <nav>
+    <a href="index.html" class="active">Destek / Support</a>
+    <a href="privacy.html">Gizlilik / Privacy</a>
+    <a href="#tr" onclick="show('tr');return false;">Türkçe</a>
+    <a href="#en" onclick="show('en');return false;">English</a>
+  </nav>
+
+  <section id="tr" class="lang show">
+    <div class="card">
+      <h2>Destek</h2>
+      <p>DishPop, bulaşıkları doğru kasalara dizip makineye gönderdiğin tek mekanikli bir mantık bulmacasıdır. Sorun, öneri ve geri bildirimlerin için bize yaz:</p>
+      <p><strong>E-posta:</strong> <a href="mailto:ahmetkumas@outlook.com?subject=DishPop%20Destek">ahmetkumas@outlook.com</a></p>
+      <p class="muted">Genelde 2 iş günü içinde yanıt veriyoruz. Yazarken cihaz modelini, iOS sürümünü ve mümkünse ekran görüntüsünü eklersen daha hızlı çözeriz.</p>
+    </div>
+
+    <div class="card">
+      <h2>Sık sorulan sorular</h2>
+      <h3>Oyun internetsiz açılmıyor</h3>
+      <p>DishPop internet bağlantısı gerektirir. Wi-Fi veya mobil verinin açık olduğundan emin olup "Yenile"ye dokun.</p>
+      <h3>Canım bitti, ne yapabilirim?</h3>
+      <p>Canlar zamanla kendiliğinden dolar. Beklemek istemiyorsan can ekranındaki kısa reklamı izleyerek anında +1 can alabilirsin.</p>
+      <h3>Bir sonraki sezon kilitli</h3>
+      <p>Yeni sezon için önceki bölümlerden belirli sayıda yıldız toplamak gerekir. Eksik yıldızlı bölümleri tekrar oynayarak kilidi açabilirsin.</p>
+      <h3>İlerlemem başka cihaza geçer mi?</h3>
+      <p>Hayır. DishPop hesap kullanmaz; ilerleme yalnızca cihazında saklanır. Uygulamayı silmek ilerlemeyi de siler.</p>
+      <h3>Reklamları nasıl kişiselleştirmeden gösteririm?</h3>
+      <p>Ayarlar &gt; Reklam tercihi bölümünden seçimini değiştirebilirsin. iOS'ta Ayarlar &gt; Gizlilik ve Güvenlik &gt; Takip bölümü de geçerlidir.</p>
+      <h3>Verilerimi nasıl sildiririm?</h3>
+      <p>Ayarlar &gt; Gizlilik &gt; "Veri silme isteği" ile ölçüm verilerinin silinmesini isteyebilirsin. Ayrıntılar için <a href="privacy.html#tr">gizlilik politikası</a>na bak.</p>
+    </div>
+  </section>
+
+  <section id="en" class="lang">
+    <div class="card">
+      <h2>Support</h2>
+      <p>DishPop is a single-mechanic logic puzzle: sort the dishes into the right racks and send them to the dishwasher. For bugs, suggestions and feedback, write to us:</p>
+      <p><strong>E-mail:</strong> <a href="mailto:ahmetkumas@outlook.com?subject=DishPop%20Support">ahmetkumas@outlook.com</a></p>
+      <p class="muted">We usually reply within 2 business days. Including your device model, iOS version and a screenshot helps us fix things faster.</p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently asked questions</h2>
+      <h3>The game won't open without internet</h3>
+      <p>DishPop requires an internet connection. Make sure Wi-Fi or mobile data is on, then tap "Retry".</p>
+      <h3>I'm out of lives</h3>
+      <p>Lives refill over time. If you don't want to wait, watch the short ad on the lives screen to get +1 life instantly.</p>
+      <h3>The next season is locked</h3>
+      <p>Each new season needs a number of stars from earlier levels. Replay levels with missing stars to unlock it.</p>
+      <h3>Does my progress transfer to another device?</h3>
+      <p>No. DishPop has no accounts; progress is stored only on your device. Deleting the app deletes your progress.</p>
+      <h3>How do I turn off personalized ads?</h3>
+      <p>Change your choice in Settings &gt; Ad preference. iOS Settings &gt; Privacy &amp; Security &gt; Tracking also applies.</p>
+      <h3>How do I delete my data?</h3>
+      <p>Use Settings &gt; Privacy &gt; "Request data deletion" to have analytics data deleted. See the <a href="privacy.html#en">privacy policy</a> for details.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Ahmet Kumaş · DishPop</footer>
+</main>
+<script>
+function show(l){document.querySelectorAll('.lang').forEach(s=>s.classList.toggle('show',s.id===l));}
+(function(){var h=location.hash.replace('#','');if(h==='en'||h==='tr')show(h);else if(!/^tr/i.test(navigator.language||''))show('en');})();
+</script>
+</body>
+</html>
